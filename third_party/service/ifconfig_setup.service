@@ -1,0 +1,9 @@
+[Unit]
+Description=Check and update network configuration
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/ifconfig_setup.sh
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,5 @@
+os1:
+        ros__parameters:
+                os1_ip: "10.5.5.5"
+                os1_lidar_port: 7502
+                os1_imu_port: 7503

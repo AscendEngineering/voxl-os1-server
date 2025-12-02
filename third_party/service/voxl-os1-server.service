@@ -1,0 +1,17 @@
+[Unit]
+SourcePath=/home/root/voxl-os1-server/
+Wants=network-online.target
+After=network-online.target
+After=media-ouster.mount
+Requires=media-ouster.mount
+After=ifconfig_setup.service
+Requires=ifconfig_setup.service
+
+[Install]
+WantedBy=network-online.target
+
+[Service]
+WorkingDirectory=/home/root/voxl-os1-server
+ExecStart=/bin/bash /home/root/voxl-os1-server/third_party/run_background.sh
+Restart=always
+RestartSec=10

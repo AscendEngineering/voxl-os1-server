@@ -1,0 +1,11 @@
+[Unit]
+Description=Mount VOXL2 SD Card
+
+[Mount]
+What=/dev/voxl2
+Where=/media/ouster
+Type=exfat
+Options=nofail,nonempty
+
+[Install]
+WantedBy=multi-user.target

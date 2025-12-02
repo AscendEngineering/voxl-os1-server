@@ -1,0 +1,11 @@
+[Unit]
+Description=Watchdog for media-ouster.mount
+Wants=media-ouster.mount
+After=media-ouster.mount
+
+[Service]
+Type=simple
+ExecStart=/bin/sh -c 'while true; do sleep 1; systemctl is-active --quiet media-ouster.mount || systemctl restart media-ouster.mount; done'
+
+[Install]
+WantedBy=multi-user.target

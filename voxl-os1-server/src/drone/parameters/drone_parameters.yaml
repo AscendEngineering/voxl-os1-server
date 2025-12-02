@@ -1,0 +1,7 @@
+drone:
+        ros__parameters:
+                simulation: False
+                simulation_ip: "127.0.0.1"
+                simulation_port: "14550"
+                connection_path: "/dev/ttyUSB0"
+                baudrate: 57600

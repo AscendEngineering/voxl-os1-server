@@ -1,0 +1,5 @@
+mavsdk_drone:
+  ros__parameters:
+    udp_bool: true
+    dev_path: "/dev/ttyHS3"
+    baudrate: "921600"
